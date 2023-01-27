@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+  background-color:#042350 ;
+
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+  background-color:#042350 ;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  padding: 10px;
+  text-align: center;
+  background-color:#042350 ;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+
+
+img {
+    text-align: center;
+}
+h1{ 
+    font-size:48px;
+    color: white;
+
+}
+h2{
+    font-size: 32px;
+    color: white;
+
+}
+p{
+    font-size: 17px;
+
+}
+
+h3{
+  font-size: 24px;
+  text-align: center;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #042350;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: rgb(246, 92, 2);}
+
+
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    padding-bottom: .2em;
+}
+p {
+  text-align: center;
+ 
+}
+li {
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <ul class="topnav">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li class="right"><a href="#about">About</a></li>
+  </ul>
+</div>
+
+  <div class="header">
+    <img src="images/W logo.png" width="150px">
+    <h1>Walpole High School</h1>
+    <h2>Mathematics</h2>
+  </div>
+  
+  <div class="left" style="background-color:white;">
+    <P>The Mathematics curriculum attempts to provide learning experiences for all students consistent with their academic abilities, needs, and aspirations. The program offered by the Mathematics Department reflects an awareness that we live in a complex age in which mathematics plays an increasingly important role for society and the individual alike. The intent of the curriculum is to present mathematics as a useful, exciting, and creative area of study that can be appreciated, enjoyed, and mastered by all students. Particular emphasis is placed on understanding mathematics with the goal of preparing students to adapt in a continuously changing, technical world. Students will be challenged to achieve mathematical power through problem solving, communicating mathematically, reasoning, and making connections.</P>
+  </div>
+  <div class="middle" style="background-color:white;">
+    <h3>Our Courses</h3>
+  <li>Algebra I Honors</li>
+  <li>Algebra I CP1</li>
+  <li>Algebra I CP2</li>
+  <li>Geometry Honors</li>
+  <li>Geometry CP1</li>
+  <li>Geometry CP2</li>
+  <li>Algebra II/Precalculus Honors</li>
+  <li>Algebra II/Precalculus CP1</li>
+  <li>Algebra II CP2</li>
+  <li>Trigonometry & Advanced Math Topics CP1</li>
+  <li>Calculus Honors</li>
+  <li>Calculus CP1</li>
+  <li>Statistics Honors</li>
+  <li>Statistics CP1</li>
+  <li>Statistics CP2</li>
+  <li>Discrete Math CP2</li>
+  <li>AP Calculus AB/BC</li>
+  <li>AP Statistics</li>
+
+  
+
+  
+  
+  </div>  
+  <div class="right" style="background-color:white;">
+  <img src="images/1_L76A5gL6176UbMgn7q4Ybg.jpeg" width="35%">
+  </div>
+  
+  <div class="footer">
+  <p>Rory H | WHS Web Design | 2022-2023</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
